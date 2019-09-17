@@ -6,49 +6,33 @@
 	
 </head>
 <body>
-	<button id="moodbutton" onclick="myfunction()" value="o">change my mood</button>
+	<h1>My Mood Tone</h1>
+	<button id="mymood" onclick="myfunction()" value="0">Change my Color!</button>
 
-	<div id= 'text'> </div>
+	<div id= "moodcolor">Feeling blue </div>
 
 	<script> 
 
-		function myfunciton(paramavar) {
-			button = doncument.getElementByID('moodbutton')
+
+		function myfunction() {
+			alert("i am a box");
+
+
+						button = document.getElementByID('mymood')
 
 			if (button.value == '0') {
-				alert('feeling blue');
+				text = "feeling blue";
+				document.getElementByID('moodcolor'). innerHTML = text
+				document.body.style.backgroundcolor = "blue";
+				button.value = '1';
 			}
 
 			else {
-			 alert(paramavar); 
 			}
-		}
 
-	
-
+					}
 
 
-		var startNum = 0;
-		while (startNum < 10) {
-			console.log ('the number is:' + startNum);
-			document.getElementByID ('text'). innerHTML = startNum
-			startNum = startNum + 1;
-		}
-		do {
-			console.log('the wihle is' + doStartNum)
-			doStartNum ++;
-		}
-		while (doStartNum < 10);
-
-		myvariable = 1;
-
-		if  (myvariable == 1) {
-			alert('its equal ton 1');
-		}
-
-		else {
-			alert('its not equal to 1');
-		}
 
 
 	</script>
